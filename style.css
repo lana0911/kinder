@@ -1,0 +1,291 @@
+html{
+    font-family: 'Anton';
+}
+#intro{
+    margin: 3% 0;
+    background-color: white;
+
+}
+#intro .jumbotron{
+    height: 85vh;
+    background-image: url(bg.png);
+    background-size: contain;
+}
+#intro .container{
+    position: relative;
+    top: 65%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+#intro .png{
+    position: relative;
+    left: 0%;
+    top:4rem;
+    width: 65% ;
+    height: 100px;  
+    overflow: hidden;
+    background-size: cover;
+}
+
+#top{
+    background-image: url(top.png);
+    animation: MoveToRight 2.0s ;
+}
+#top:hover{    
+    width: 483px ;
+    height: 291px;
+    left: 15%;
+    background-size: cover;
+    background-image: url(nomal.png);
+    
+}
+#midle{
+    background-image: url(midle.png);
+    animation: MoveToLeft 2.5s ;    
+
+}#midle:hover{    
+    width: 483px ;
+    height: 291px;
+    left: 15%;
+    background-size: cover;
+    background-image: url(nomal.png);
+    
+}
+#bottom{
+    background-image: url(bottom.png);
+    animation: MoveToRight2 2.5s ;
+}#bottom:hover{    
+    width: 483px ;
+    height: 291px;
+    left: 15%;
+    background-size: cover;
+    background-image: url(w.png);
+    
+}
+@keyframes MoveToRight {
+    from{
+        left: -120%;
+    }to{
+        left: 0%;
+    }
+
+}@keyframes MoveToRight2 {
+    from{
+        left: -400%;
+    }to{
+        left: 0%;
+    }
+
+}
+@keyframes MoveToLeft {
+    from{
+        left: 220%;
+    }to{
+        left: 0%;
+    }
+}
+header nav img{
+    width: 150px;
+}
+header .container{
+    height: 5vh;
+}
+
+.btn_buy{
+    position: relative;
+    left: 90%;
+    top: -30vh;
+    width: 15rem;
+    height: 11rem;
+    border: 5px ;
+    font-size: 60px;
+    background-color: white;
+    border-radius: 20%;
+    color: black;
+    font-family: 'Anton';
+}
+
+#intro span{
+    color: brown;
+}
+#intro p{
+    color: #F3410E;
+}
+/* second--------------------- */
+#second .row img{
+    width: 100%;
+    background-color: burlywood;
+    border-radius: 35%;
+    position: relative;
+    left: -20%;
+    top: 0%;
+    margin-bottom: 76%;
+}
+#second h1,h3{
+    margin-top:10%;
+    position: relative;
+    left: 35%;    width: fit-content;
+
+}
+#second h3{
+    margin-top: 1%;left: 25%;
+}
+#second h5{
+    margin: 8%;
+}
+#second span {
+    color: #F3410E;
+    font-size: xxx-large;
+    font-family: 'Anton';
+}
+#second .f {
+height: 100%;
+width: 50%;
+}
+
+#second a {
+    color: white;
+    position: relative;
+    left: 50%;
+    top: -35%;
+    background: #F3410E;
+    width: 25vh;
+    text-align: center;
+    height: 16vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: transparent;
+    font-size: xx-large;
+    border-radius: 45%;
+    float: left;
+}#flag{
+
+}
+#ob1{
+    position: relative;
+    top: -40%;
+}
+#ob2{
+    position: relative;
+    top: -150px;
+}
+#ob3{
+    position: relative;
+    top: -150px;
+}
+
+
+#second .knowledge{
+    position: relative;
+    background-color: transparent;
+    top: -15rem;
+    left: -8%;
+}
+#second .knowledge img{
+    width: 5%;
+}
+/* Neon light -----------------------------------------*/
+.centered{
+    position:absolute;
+    left:90%;
+    top:50%;
+    transform:translate(-50%,-50%); 
+  }
+  
+  .neon-effect{
+    color:#fff;
+    letter-spacing:2px;
+  }
+  
+
+  .neon-effect:nth-of-type(1   ){
+    text-shadow:
+      0 0 5px rgba(247, 245, 41,.1),
+      0 0 10px #591F19,
+      0 0 20px #591F19,
+      0 0 40px #591F19;
+     animation:neon-shine 1s linear infinite;
+  }
+   
+@keyframes neon-shine{
+    0%{opacity:1;}
+    90%{opacity:0;}
+    100%{
+    /* color:#232323; */
+    }
+}
+#second input {
+    overflow: visible;
+    width: 120px;
+    border: red;
+    background-color: burlywood;
+    border-radius: 40%;
+    text-align: center;
+} 
+#second #app{
+    top: -18rem;
+     position: relative;
+   /* left: -10rem; */
+    font-size: larger;
+    color: #96352a ;
+}
+#second .company{
+    position: relative;
+    top: -19rem;
+    font-size: larger;
+}
+
+#second .chocolate div{
+    position: relative;
+    top: -19rem;
+    background-size: contain;
+    width: 7rem;
+    height: 7rem;
+    margin-left: 50px;
+    padding: 0;
+}
+#gold{
+    background-image: url(gold.png);
+    float: left;
+}
+#gold:hover{    
+    background-color: transparent;
+    background-image: url(yes.png);
+    background-size: contain;
+    z-index: 999;
+    float: left;
+}
+#her{
+    background-image: url(her.png);
+    float: left;
+}
+#her:hover{    
+    background-color: transparent;
+    background-image: url(no.png);
+    background-size: cover;
+    z-index: 999;
+    
+}
+#nutella{
+    background-image: url(nutella.png);
+    float: left;
+}
+#nutella:hover{    
+    background-color: transparent;
+    background-image: url(yes.png);
+    background-size: cover;
+    z-index: 999;
+    
+}
+#test{
+    position: fixed;
+    bottom: 0;
+    left: 86%;
+    background-image: url(gotop.png);
+    background-color: transparent;
+    background-size: cover;
+    height: 10%;
+    width: 5%;
+    border: transparent;
+}

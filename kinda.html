@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- bootstrap -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <!-- css   -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');</style>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="https://www.kinder.com/tw/zh/kinder-bueno"  target="_blank">官網</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        產品 </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#second">健達繽紛樂巧克力</a>
+                      <a class="dropdown-item" href="#two">健達繽紛樂白巧克力</a>
+                      <a class="dropdown-item" href="#three">健達繽紛樂黑巧克力</a>
+                    </div>
+                  </li>
+                </ul>
+
+            </div>
+            </div>
+        </nav>
+    </header>
+   <section id="intro">
+       <div class="jumbotron">
+            <div class="container">
+                <div class="png" id="top"></div>  
+                <div class="png" id="midle"></div>
+                <div class="png" id="bottom"></div>
+                <button type="button" class="btn_buy">BUENO!!</button>
+            </div>
+       </div>
+    </section>
+     <!-- vue -->
+     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <section id="second">
+        <div class="container">
+            <div class="row">
+                <h1>健達繽紛樂巧克力<span>&nbsp;Kinder Bueno</span></h1> 
+                <div class="row">
+                    <div class="col-md-4 text-left">
+                        <img src="gif1.gif">
+                    </div>
+                    <div class="col-md-8 text-left">
+                        <h3>健達原味最對味！</h3>
+                        <h5>牛奶巧克力加上威化外層, 含綿滑牛奶及榛果內餡。<br>
+                            一進舌尖就畫出濃濃榛果香。<br>
+                            獨特口感，多重享受。</h5>
+                    </div>
+                    <a href="https://feebee.com.tw/s/%E5%81%A5%E9%81%94%E7%B9%BD%E7%B4%9B%E6%A8%82/"  target="_blank"><br>去搶購</a>
+
+
+                
+                </div>
+                
+            </div>
+            <div class="knowledge"><img src="lumb.gif"><br>小知識</div>
+            <div id="app">
+                <div>猜猜看 吃掉<input type="text" v-model="buneo"> 條繽紛樂 可以蓋 {{buliding}}棟101大樓!</div> 
+                 <div v-if="buneo==12700">猜對了!真厲害</div>
+            </div>
+            <div id="two">
+                <h1 class="two">健達繽紛樂白巧克力<span>&nbsp;Kinder Bueno White</span></h1>
+                <div class="row">
+                    <div class="col-md-4 text-left">
+                        <img src="gif2.gif">
+                    </div>
+                    <div class="col-md-8 text-left">
+                        <h3>白巧克力最心動！</h3>
+                        <h5>牛奶巧克力加上威化外層, 含綿滑牛奶及榛果內餡。<br>
+                            一進舌尖就畫出濃濃榛果香。<br>
+                            獨特口感，多重享受。</h5>
+                            <br><br><br><br><br><br><br><br><br><br>
+                    <a href="https://feebee.com.tw/s/?q=%E5%81%A5%E9%81%94%E7%B9%BD%E7%B4%9B%E6%A8%82%E7%99%BD%E5%B7%A7%E5%85%8B%E5%8A%9B&p=%E5%81%A5%E9%81%94%E7%B9%BD%E7%B4%9B%E6%A8%82%E7%99%BD%E5%B7%A7%E5%85%8B%E5%8A%9B"  target="_blank"><br>去搶購</a>
+
+                    </div>
+
+                    <!-- <a class="nav-link active" aria-current="page" href="https://www.kinder.com/tw/zh/kinder-bueno">官網</a> -->
+                
+                </div>
+                <div class="knowledge"><img src="lumb.gif"><br>小知識</div>
+                <div class="company">你知道哪些巧克力是和繽紛樂同一間公司嗎?</div> 
+                <div class="chocolate">
+                    <div id="gold"></div>
+                    <div  id="her"></div>
+                    <div  id="nutella"></div>
+                </div>
+            </div>
+        <br>
+            <h1 id="three">健達繽紛樂黑巧克力<span>&nbsp;Kinder Bueno Dark</span></h1>
+            <div class="row">
+                <div class="col-md-4 text-left">
+                    <img src="gif1.gif">
+                </div>
+                <div class="f">
+                    <h3>健達原味最對味！</h3>
+                    <h5>牛奶巧克力加上威化外層, 含綿滑牛奶及榛果內餡。<br>
+                        一進舌尖就畫出濃濃榛果香。<br>
+                        獨特口感，多重享受。</h5>
+                        <br>
+                        <br>
+                        <br>
+                <a href="https://feebee.com.tw/s/?q=%E5%81%A5%E9%81%94%E7%B9%BD%E7%B4%9B%E6%A8%82%E9%BB%91%E5%B7%A7%E5%85%8B%E5%8A%9B&p=%E5%81%A5%E9%81%94%E7%B9%BD%E7%B4%9B%E6%A8%82%E9%BB%91%E5%B7%A7%E5%85%8B%E5%8A%9B"  target="_blank" id="flag"><br>去搶購</a>
+
+                </div>
+
+            </div>
+         
+        </div>
+            
+       
+
+        <!-- <script type="text/javascript" language="javascript" src="js.js" charset="utf-8"></script> -->
+    </section> <button id="test" ></button>
+    <script type="text/javascript" language="javascript" src="js.js" charset="utf-8"></script>
+        
+</body> 
+
+
+</html>
